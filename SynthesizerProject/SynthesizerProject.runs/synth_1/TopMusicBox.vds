@@ -1,0 +1,1199 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Dec 24 23:41:36 2019
+# Process ID: 9708
+# Current directory: C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.runs/synth_1
+# Command line: vivado.exe -log TopMusicBox.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TopMusicBox.tcl
+# Log file: C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.runs/synth_1/TopMusicBox.vds
+# Journal file: C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TopMusicBox.tcl -notrace
+Command: synth_design -top TopMusicBox -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 26152 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 700.441 ; gain = 178.211
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TopMusicBox' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/TopMusicBox.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'Mode1' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Mode1.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'segmentDisplay' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/segmentDisplay.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'binaryToHexDisplay' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/BinaryToHexDisplay.vhd:38]
+INFO: [Synth 8-226] default block is never used [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/BinaryToHexDisplay.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'binaryToHexDisplay' (1#1) [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/BinaryToHexDisplay.vhd:38]
+INFO: [Synth 8-638] synthesizing module 'Clock' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Clock.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'Clock' (2#1) [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Clock.vhd:44]
+WARNING: [Synth 8-614] signal 'D4' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/segmentDisplay.vhd:65]
+WARNING: [Synth 8-614] signal 'D3' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/segmentDisplay.vhd:65]
+WARNING: [Synth 8-614] signal 'D2' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/segmentDisplay.vhd:65]
+WARNING: [Synth 8-614] signal 'D1' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/segmentDisplay.vhd:65]
+INFO: [Synth 8-256] done synthesizing module 'segmentDisplay' (3#1) [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/segmentDisplay.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'Synth' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:42]
+INFO: [Synth 8-3491] module 'Wave_Generator' declared at 'C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/WaveGenerator.vhd:27' bound to instance 'Note_C4' of component 'Wave_Generator' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'Wave_Generator' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/WaveGenerator.vhd:36]
+WARNING: [Synth 8-6014] Unused sequential element temp_reg was removed.  [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/WaveGenerator.vhd:63]
+INFO: [Synth 8-256] done synthesizing module 'Wave_Generator' (4#1) [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/WaveGenerator.vhd:36]
+INFO: [Synth 8-3491] module 'Wave_Generator' declared at 'C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/WaveGenerator.vhd:27' bound to instance 'Note_Cs4' of component 'Wave_Generator' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:117]
+INFO: [Synth 8-3491] module 'Wave_Generator' declared at 'C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/WaveGenerator.vhd:27' bound to instance 'Note_D4' of component 'Wave_Generator' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:118]
+INFO: [Synth 8-3491] module 'Wave_Generator' declared at 'C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/WaveGenerator.vhd:27' bound to instance 'Note_Ds4' of component 'Wave_Generator' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:119]
+INFO: [Synth 8-3491] module 'Wave_Generator' declared at 'C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/WaveGenerator.vhd:27' bound to instance 'Note_E4' of component 'Wave_Generator' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:120]
+INFO: [Synth 8-3491] module 'Wave_Generator' declared at 'C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/WaveGenerator.vhd:27' bound to instance 'Note_F4' of component 'Wave_Generator' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:121]
+INFO: [Synth 8-3491] module 'Wave_Generator' declared at 'C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/WaveGenerator.vhd:27' bound to instance 'Note_Fs4' of component 'Wave_Generator' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:122]
+INFO: [Synth 8-3491] module 'Wave_Generator' declared at 'C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/WaveGenerator.vhd:27' bound to instance 'Note_G4' of component 'Wave_Generator' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:123]
+INFO: [Synth 8-3491] module 'Wave_Generator' declared at 'C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/WaveGenerator.vhd:27' bound to instance 'Note_Gs4' of component 'Wave_Generator' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:124]
+INFO: [Synth 8-3491] module 'Wave_Generator' declared at 'C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/WaveGenerator.vhd:27' bound to instance 'Note_A4' of component 'Wave_Generator' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:125]
+INFO: [Synth 8-3491] module 'Wave_Generator' declared at 'C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/WaveGenerator.vhd:27' bound to instance 'Note_As4' of component 'Wave_Generator' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:126]
+INFO: [Synth 8-3491] module 'Wave_Generator' declared at 'C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/WaveGenerator.vhd:27' bound to instance 'Note_B4' of component 'Wave_Generator' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:127]
+INFO: [Synth 8-3491] module 'Wave_Generator' declared at 'C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/WaveGenerator.vhd:27' bound to instance 'Note_C5' of component 'Wave_Generator' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:131]
+INFO: [Synth 8-3491] module 'Wave_Generator' declared at 'C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/WaveGenerator.vhd:27' bound to instance 'Note_Cs5' of component 'Wave_Generator' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:132]
+INFO: [Synth 8-3491] module 'Wave_Generator' declared at 'C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/WaveGenerator.vhd:27' bound to instance 'Note_D5' of component 'Wave_Generator' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:133]
+INFO: [Synth 8-3491] module 'Wave_Generator' declared at 'C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/WaveGenerator.vhd:27' bound to instance 'Note_Ds5' of component 'Wave_Generator' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:134]
+INFO: [Synth 8-3491] module 'Wave_Generator' declared at 'C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/WaveGenerator.vhd:27' bound to instance 'Note_E5' of component 'Wave_Generator' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:135]
+INFO: [Synth 8-3491] module 'Wave_Generator' declared at 'C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/WaveGenerator.vhd:27' bound to instance 'Note_F5' of component 'Wave_Generator' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:136]
+INFO: [Synth 8-3491] module 'Wave_Generator' declared at 'C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/WaveGenerator.vhd:27' bound to instance 'Note_Fs5' of component 'Wave_Generator' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:137]
+INFO: [Synth 8-3491] module 'Wave_Generator' declared at 'C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/WaveGenerator.vhd:27' bound to instance 'Note_G5' of component 'Wave_Generator' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:138]
+INFO: [Synth 8-3491] module 'Wave_Generator' declared at 'C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/WaveGenerator.vhd:27' bound to instance 'Note_Gs5' of component 'Wave_Generator' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:139]
+INFO: [Synth 8-3491] module 'Wave_Generator' declared at 'C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/WaveGenerator.vhd:27' bound to instance 'Note_A5' of component 'Wave_Generator' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:140]
+INFO: [Synth 8-3491] module 'Wave_Generator' declared at 'C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/WaveGenerator.vhd:27' bound to instance 'Note_As5' of component 'Wave_Generator' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:141]
+INFO: [Synth 8-3491] module 'Wave_Generator' declared at 'C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/WaveGenerator.vhd:27' bound to instance 'Note_B5' of component 'Wave_Generator' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:142]
+INFO: [Synth 8-3491] module 'Wave_Generator' declared at 'C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/WaveGenerator.vhd:27' bound to instance 'Note_C6' of component 'Wave_Generator' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:143]
+WARNING: [Synth 8-614] signal 'cntC6' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:206]
+WARNING: [Synth 8-614] signal 'O4' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:206]
+WARNING: [Synth 8-614] signal 'cntCs4' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:206]
+WARNING: [Synth 8-614] signal 'cntD4' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:206]
+WARNING: [Synth 8-614] signal 'cntDs4' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:206]
+WARNING: [Synth 8-614] signal 'cntE4' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:206]
+WARNING: [Synth 8-614] signal 'cntF4' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:206]
+WARNING: [Synth 8-614] signal 'cntFs4' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:206]
+WARNING: [Synth 8-614] signal 'cntG4' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:206]
+WARNING: [Synth 8-614] signal 'cntGs4' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:206]
+WARNING: [Synth 8-614] signal 'cntA4' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:206]
+WARNING: [Synth 8-614] signal 'cntAs4' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:206]
+WARNING: [Synth 8-614] signal 'cntB4' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:206]
+WARNING: [Synth 8-614] signal 'O5' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:206]
+WARNING: [Synth 8-614] signal 'cntC5' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:206]
+WARNING: [Synth 8-614] signal 'cntCs5' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:206]
+WARNING: [Synth 8-614] signal 'cntD5' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:206]
+WARNING: [Synth 8-614] signal 'cntDs5' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:206]
+WARNING: [Synth 8-614] signal 'cntE5' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:206]
+WARNING: [Synth 8-614] signal 'cntF5' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:206]
+WARNING: [Synth 8-614] signal 'cntFs5' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:206]
+WARNING: [Synth 8-614] signal 'cntG5' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:206]
+WARNING: [Synth 8-614] signal 'cntGs5' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:206]
+WARNING: [Synth 8-614] signal 'cntA5' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:206]
+WARNING: [Synth 8-614] signal 'cntAs5' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:206]
+WARNING: [Synth 8-614] signal 'cntB5' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:206]
+INFO: [Synth 8-256] done synthesizing module 'Synth' (5#1) [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:42]
+WARNING: [Synth 8-614] signal 'N' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Mode1.vhd:57]
+WARNING: [Synth 8-614] signal 'Octave' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Mode1.vhd:57]
+WARNING: [Synth 8-3848] Net R4 in module/entity Mode1 does not have driver. [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Mode1.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'Mode1' (6#1) [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Mode1.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'Mode2' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Mode2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Timer' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Timer.vhd:41]
+WARNING: [Synth 8-614] signal 'bd' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Timer.vhd:48]
+WARNING: [Synth 8-614] signal 'bu' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Timer.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'Timer' (7#1) [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Timer.vhd:41]
+WARNING: [Synth 8-614] signal 'S' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Mode2.vhd:66]
+WARNING: [Synth 8-614] signal 'Attack' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Mode2.vhd:66]
+WARNING: [Synth 8-614] signal 'Decay' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Mode2.vhd:66]
+WARNING: [Synth 8-614] signal 'Sustain' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Mode2.vhd:66]
+WARNING: [Synth 8-614] signal 'Release' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Mode2.vhd:66]
+WARNING: [Synth 8-3848] Net R2 in module/entity Mode2 does not have driver. [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Mode2.vhd:54]
+WARNING: [Synth 8-3848] Net R4 in module/entity Mode2 does not have driver. [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Mode2.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'Mode2' (8#1) [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Mode2.vhd:47]
+WARNING: [Synth 8-614] signal 'Mode' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/TopMusicBox.vhd:73]
+WARNING: [Synth 8-614] signal 'Dis1' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/TopMusicBox.vhd:73]
+WARNING: [Synth 8-614] signal 'Dig1' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/TopMusicBox.vhd:73]
+WARNING: [Synth 8-614] signal 'N' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/TopMusicBox.vhd:73]
+WARNING: [Synth 8-614] signal 'Dis2' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/TopMusicBox.vhd:73]
+WARNING: [Synth 8-614] signal 'Dig2' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/TopMusicBox.vhd:73]
+WARNING: [Synth 8-614] signal 'but' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/TopMusicBox.vhd:73]
+WARNING: [Synth 8-614] signal 'bdt' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/TopMusicBox.vhd:73]
+INFO: [Synth 8-256] done synthesizing module 'TopMusicBox' (9#1) [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/TopMusicBox.vhd:52]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 764.367 ; gain = 242.137
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 764.367 ; gain = 242.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 764.367 ; gain = 242.137
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/constrs_1/new/Constraints.xdc]
+Finished Parsing XDC File [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/constrs_1/new/Constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/constrs_1/new/Constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TopMusicBox_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TopMusicBox_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 899.145 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 899.145 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 899.145 ; gain = 376.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 899.145 ; gain = 376.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 899.145 ; gain = 376.914
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/WaveGenerator.vhd:63]
+INFO: [Synth 8-5546] ROM "R2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Timer.vhd:54]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Timer.vhd:54]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Mode2.vhd:72]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Mode2.vhd:84]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Mode2.vhd:80]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Mode2.vhd:76]
+INFO: [Synth 8-5544] ROM "R3" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'Wave1_reg' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:212]
+WARNING: [Synth 8-327] inferring latch for variable 'Wave2_reg' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:213]
+WARNING: [Synth 8-327] inferring latch for variable 'Wave3_reg' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:214]
+WARNING: [Synth 8-327] inferring latch for variable 'Wave0_reg' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Synth.vhd:211]
+WARNING: [Synth 8-327] inferring latch for variable 'Attack_reg' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Mode2.vhd:63]
+WARNING: [Synth 8-327] inferring latch for variable 'Decay_reg' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Mode2.vhd:63]
+WARNING: [Synth 8-327] inferring latch for variable 'Sustain_reg' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Mode2.vhd:63]
+WARNING: [Synth 8-327] inferring latch for variable 'Release_reg' [C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.srcs/sources_1/new/Mode2.vhd:63]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 899.145 ; gain = 376.914
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |Synth__GB0       |           1|     27949|
+|2     |Synth__GB1       |           1|      5775|
+|3     |Synth__GB2       |           1|      6931|
+|4     |Mode1__GC0       |           1|       721|
+|5     |TopMusicBox__GC0 |           1|      9251|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input     31 Bit       Adders := 28    
+	   2 Input     16 Bit       Adders := 25    
+	   2 Input     10 Bit       Adders := 26    
+	   4 Input     10 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 25    
+	   2 Input      6 Bit       Adders := 1     
+	   9 Input      5 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 4     
+	   4 Input      5 Bit       Adders := 1     
+	   5 Input      5 Bit       Adders := 1     
+	   6 Input      5 Bit       Adders := 1     
+	   7 Input      5 Bit       Adders := 1     
+	   8 Input      5 Bit       Adders := 1     
+	   9 Input      4 Bit       Adders := 1     
+	   7 Input      4 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   3 Input      4 Bit       Adders := 1     
+	   4 Input      4 Bit       Adders := 1     
+	   5 Input      4 Bit       Adders := 1     
+	   6 Input      4 Bit       Adders := 1     
+	   8 Input      4 Bit       Adders := 1     
+	   5 Input      3 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   3 Input      3 Bit       Adders := 1     
+	   4 Input      3 Bit       Adders := 1     
+	   3 Input      2 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 27    
+	                7 Bit    Registers := 25    
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+	   9 Input     32 Bit        Muxes := 1     
+	   7 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 28    
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 208   
+	   5 Input     10 Bit        Muxes := 87    
+	   4 Input     10 Bit        Muxes := 5     
+	   3 Input     10 Bit        Muxes := 1     
+	   8 Input     10 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 4     
+	  13 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	  13 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 221   
+	   5 Input      1 Bit        Muxes := 88    
+	   4 Input      1 Bit        Muxes := 10    
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module TopMusicBox 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module Wave_Generator__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Wave_Generator__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Wave_Generator__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Wave_Generator__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Wave_Generator__5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Wave_Generator__6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Wave_Generator__7 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Wave_Generator__8 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Wave_Generator__9 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Wave_Generator__10 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Wave_Generator__11 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Wave_Generator__12 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Wave_Generator__13 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Wave_Generator__14 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Wave_Generator__15 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Wave_Generator__16 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Wave_Generator__17 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Wave_Generator__18 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Wave_Generator__19 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Wave_Generator__20 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Wave_Generator__21 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Wave_Generator__22 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Wave_Generator__23 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Wave_Generator__24 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Wave_Generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Synth 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     10 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   9 Input      5 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
+	   4 Input      5 Bit       Adders := 1     
+	   5 Input      5 Bit       Adders := 1     
+	   6 Input      5 Bit       Adders := 1     
+	   7 Input      5 Bit       Adders := 1     
+	   8 Input      5 Bit       Adders := 1     
+	   9 Input      4 Bit       Adders := 1     
+	   7 Input      4 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   3 Input      4 Bit       Adders := 1     
+	   4 Input      4 Bit       Adders := 1     
+	   5 Input      4 Bit       Adders := 1     
+	   6 Input      4 Bit       Adders := 1     
+	   8 Input      4 Bit       Adders := 1     
+	   5 Input      3 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   3 Input      3 Bit       Adders := 1     
+	   4 Input      3 Bit       Adders := 1     
+	   3 Input      2 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 183   
+	   5 Input     10 Bit        Muxes := 87    
+	   4 Input     10 Bit        Muxes := 5     
+	   3 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 186   
+	   5 Input      1 Bit        Muxes := 88    
+	   4 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 2     
+Module segmentDisplay__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+Module Mode1 
+Detailed RTL Component Info : 
++---Muxes : 
+	  13 Input      4 Bit        Muxes := 1     
+	  13 Input      3 Bit        Muxes := 1     
+Module segmentDisplay 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+Module Timer 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module Mode2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
++---Registers : 
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+	   9 Input     32 Bit        Muxes := 1     
+	   7 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 1     
+	   8 Input     10 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP Note_Cs4/WaveOut3, operation Mode is: A*B.
+DSP Report: operator Note_Cs4/WaveOut3 is absorbed into DSP Note_Cs4/WaveOut3.
+DSP Report: operator Note_Cs4/WaveOut3 is absorbed into DSP Note_Cs4/WaveOut3.
+DSP Report: Generating DSP Note_Cs4/WaveOut3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Note_Cs4/WaveOut3 is absorbed into DSP Note_Cs4/WaveOut3.
+DSP Report: operator Note_Cs4/WaveOut3 is absorbed into DSP Note_Cs4/WaveOut3.
+DSP Report: Generating DSP Note_D4/WaveOut3, operation Mode is: A*B.
+DSP Report: operator Note_D4/WaveOut3 is absorbed into DSP Note_D4/WaveOut3.
+DSP Report: operator Note_D4/WaveOut3 is absorbed into DSP Note_D4/WaveOut3.
+DSP Report: Generating DSP Note_D4/WaveOut3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Note_D4/WaveOut3 is absorbed into DSP Note_D4/WaveOut3.
+DSP Report: operator Note_D4/WaveOut3 is absorbed into DSP Note_D4/WaveOut3.
+DSP Report: Generating DSP Note_Ds4/WaveOut3, operation Mode is: A*B.
+DSP Report: operator Note_Ds4/WaveOut3 is absorbed into DSP Note_Ds4/WaveOut3.
+DSP Report: operator Note_Ds4/WaveOut3 is absorbed into DSP Note_Ds4/WaveOut3.
+DSP Report: Generating DSP Note_Ds4/WaveOut3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Note_Ds4/WaveOut3 is absorbed into DSP Note_Ds4/WaveOut3.
+DSP Report: operator Note_Ds4/WaveOut3 is absorbed into DSP Note_Ds4/WaveOut3.
+DSP Report: Generating DSP Note_E4/WaveOut3, operation Mode is: A*B.
+DSP Report: operator Note_E4/WaveOut3 is absorbed into DSP Note_E4/WaveOut3.
+DSP Report: operator Note_E4/WaveOut3 is absorbed into DSP Note_E4/WaveOut3.
+DSP Report: Generating DSP Note_E4/WaveOut3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Note_E4/WaveOut3 is absorbed into DSP Note_E4/WaveOut3.
+DSP Report: operator Note_E4/WaveOut3 is absorbed into DSP Note_E4/WaveOut3.
+DSP Report: Generating DSP Note_F4/WaveOut3, operation Mode is: A*B.
+DSP Report: operator Note_F4/WaveOut3 is absorbed into DSP Note_F4/WaveOut3.
+DSP Report: operator Note_F4/WaveOut3 is absorbed into DSP Note_F4/WaveOut3.
+DSP Report: Generating DSP Note_F4/WaveOut3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Note_F4/WaveOut3 is absorbed into DSP Note_F4/WaveOut3.
+DSP Report: operator Note_F4/WaveOut3 is absorbed into DSP Note_F4/WaveOut3.
+DSP Report: Generating DSP Note_Fs4/WaveOut3, operation Mode is: A*B.
+DSP Report: operator Note_Fs4/WaveOut3 is absorbed into DSP Note_Fs4/WaveOut3.
+DSP Report: operator Note_Fs4/WaveOut3 is absorbed into DSP Note_Fs4/WaveOut3.
+DSP Report: Generating DSP Note_Fs4/WaveOut3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Note_Fs4/WaveOut3 is absorbed into DSP Note_Fs4/WaveOut3.
+DSP Report: operator Note_Fs4/WaveOut3 is absorbed into DSP Note_Fs4/WaveOut3.
+DSP Report: Generating DSP Note_G4/WaveOut3, operation Mode is: A*B.
+DSP Report: operator Note_G4/WaveOut3 is absorbed into DSP Note_G4/WaveOut3.
+DSP Report: operator Note_G4/WaveOut3 is absorbed into DSP Note_G4/WaveOut3.
+DSP Report: Generating DSP Note_G4/WaveOut3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Note_G4/WaveOut3 is absorbed into DSP Note_G4/WaveOut3.
+DSP Report: operator Note_G4/WaveOut3 is absorbed into DSP Note_G4/WaveOut3.
+DSP Report: Generating DSP Note_Gs4/WaveOut3, operation Mode is: A*B.
+DSP Report: operator Note_Gs4/WaveOut3 is absorbed into DSP Note_Gs4/WaveOut3.
+DSP Report: operator Note_Gs4/WaveOut3 is absorbed into DSP Note_Gs4/WaveOut3.
+DSP Report: Generating DSP Note_Gs4/WaveOut3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Note_Gs4/WaveOut3 is absorbed into DSP Note_Gs4/WaveOut3.
+DSP Report: operator Note_Gs4/WaveOut3 is absorbed into DSP Note_Gs4/WaveOut3.
+DSP Report: Generating DSP Note_Cs5/WaveOut3, operation Mode is: A*B.
+DSP Report: operator Note_Cs5/WaveOut3 is absorbed into DSP Note_Cs5/WaveOut3.
+DSP Report: operator Note_Cs5/WaveOut3 is absorbed into DSP Note_Cs5/WaveOut3.
+DSP Report: Generating DSP Note_Cs5/WaveOut3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Note_Cs5/WaveOut3 is absorbed into DSP Note_Cs5/WaveOut3.
+DSP Report: operator Note_Cs5/WaveOut3 is absorbed into DSP Note_Cs5/WaveOut3.
+DSP Report: Generating DSP Note_D5/WaveOut3, operation Mode is: A*B.
+DSP Report: operator Note_D5/WaveOut3 is absorbed into DSP Note_D5/WaveOut3.
+DSP Report: operator Note_D5/WaveOut3 is absorbed into DSP Note_D5/WaveOut3.
+DSP Report: Generating DSP Note_D5/WaveOut3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Note_D5/WaveOut3 is absorbed into DSP Note_D5/WaveOut3.
+DSP Report: operator Note_D5/WaveOut3 is absorbed into DSP Note_D5/WaveOut3.
+DSP Report: Generating DSP Note_Ds5/WaveOut3, operation Mode is: A*B.
+DSP Report: operator Note_Ds5/WaveOut3 is absorbed into DSP Note_Ds5/WaveOut3.
+DSP Report: operator Note_Ds5/WaveOut3 is absorbed into DSP Note_Ds5/WaveOut3.
+DSP Report: Generating DSP Note_Ds5/WaveOut3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Note_Ds5/WaveOut3 is absorbed into DSP Note_Ds5/WaveOut3.
+DSP Report: operator Note_Ds5/WaveOut3 is absorbed into DSP Note_Ds5/WaveOut3.
+DSP Report: Generating DSP Note_E5/WaveOut3, operation Mode is: A*B.
+DSP Report: operator Note_E5/WaveOut3 is absorbed into DSP Note_E5/WaveOut3.
+DSP Report: operator Note_E5/WaveOut3 is absorbed into DSP Note_E5/WaveOut3.
+DSP Report: Generating DSP Note_E5/WaveOut3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Note_E5/WaveOut3 is absorbed into DSP Note_E5/WaveOut3.
+DSP Report: operator Note_E5/WaveOut3 is absorbed into DSP Note_E5/WaveOut3.
+DSP Report: Generating DSP Note_F5/WaveOut3, operation Mode is: A*B.
+DSP Report: operator Note_F5/WaveOut3 is absorbed into DSP Note_F5/WaveOut3.
+DSP Report: operator Note_F5/WaveOut3 is absorbed into DSP Note_F5/WaveOut3.
+DSP Report: Generating DSP Note_F5/WaveOut3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Note_F5/WaveOut3 is absorbed into DSP Note_F5/WaveOut3.
+DSP Report: operator Note_F5/WaveOut3 is absorbed into DSP Note_F5/WaveOut3.
+DSP Report: Generating DSP Note_C4/WaveOut3, operation Mode is: A*B.
+DSP Report: operator Note_C4/WaveOut3 is absorbed into DSP Note_C4/WaveOut3.
+DSP Report: operator Note_C4/WaveOut3 is absorbed into DSP Note_C4/WaveOut3.
+DSP Report: Generating DSP Note_C4/WaveOut3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Note_C4/WaveOut3 is absorbed into DSP Note_C4/WaveOut3.
+DSP Report: operator Note_C4/WaveOut3 is absorbed into DSP Note_C4/WaveOut3.
+DSP Report: Generating DSP Note_C6/WaveOut3, operation Mode is: A*B.
+DSP Report: operator Note_C6/WaveOut3 is absorbed into DSP Note_C6/WaveOut3.
+DSP Report: operator Note_C6/WaveOut3 is absorbed into DSP Note_C6/WaveOut3.
+DSP Report: Generating DSP Note_C6/WaveOut3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Note_C6/WaveOut3 is absorbed into DSP Note_C6/WaveOut3.
+DSP Report: operator Note_C6/WaveOut3 is absorbed into DSP Note_C6/WaveOut3.
+DSP Report: Generating DSP Note_A5/WaveOut3, operation Mode is: A*B.
+DSP Report: operator Note_A5/WaveOut3 is absorbed into DSP Note_A5/WaveOut3.
+DSP Report: operator Note_A5/WaveOut3 is absorbed into DSP Note_A5/WaveOut3.
+DSP Report: Generating DSP Note_A5/WaveOut3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Note_A5/WaveOut3 is absorbed into DSP Note_A5/WaveOut3.
+DSP Report: operator Note_A5/WaveOut3 is absorbed into DSP Note_A5/WaveOut3.
+DSP Report: Generating DSP Note_Gs5/WaveOut3, operation Mode is: A*B.
+DSP Report: operator Note_Gs5/WaveOut3 is absorbed into DSP Note_Gs5/WaveOut3.
+DSP Report: operator Note_Gs5/WaveOut3 is absorbed into DSP Note_Gs5/WaveOut3.
+DSP Report: Generating DSP Note_Gs5/WaveOut3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Note_Gs5/WaveOut3 is absorbed into DSP Note_Gs5/WaveOut3.
+DSP Report: operator Note_Gs5/WaveOut3 is absorbed into DSP Note_Gs5/WaveOut3.
+DSP Report: Generating DSP Note_G5/WaveOut3, operation Mode is: A*B.
+DSP Report: operator Note_G5/WaveOut3 is absorbed into DSP Note_G5/WaveOut3.
+DSP Report: operator Note_G5/WaveOut3 is absorbed into DSP Note_G5/WaveOut3.
+DSP Report: Generating DSP Note_G5/WaveOut3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Note_G5/WaveOut3 is absorbed into DSP Note_G5/WaveOut3.
+DSP Report: operator Note_G5/WaveOut3 is absorbed into DSP Note_G5/WaveOut3.
+DSP Report: Generating DSP Note_Fs5/WaveOut3, operation Mode is: A*B.
+DSP Report: operator Note_Fs5/WaveOut3 is absorbed into DSP Note_Fs5/WaveOut3.
+DSP Report: operator Note_Fs5/WaveOut3 is absorbed into DSP Note_Fs5/WaveOut3.
+DSP Report: Generating DSP Note_Fs5/WaveOut3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Note_Fs5/WaveOut3 is absorbed into DSP Note_Fs5/WaveOut3.
+DSP Report: operator Note_Fs5/WaveOut3 is absorbed into DSP Note_Fs5/WaveOut3.
+DSP Report: Generating DSP Note_B5/WaveOut3, operation Mode is: A*B.
+DSP Report: operator Note_B5/WaveOut3 is absorbed into DSP Note_B5/WaveOut3.
+DSP Report: operator Note_B5/WaveOut3 is absorbed into DSP Note_B5/WaveOut3.
+DSP Report: Generating DSP Note_B5/WaveOut3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Note_B5/WaveOut3 is absorbed into DSP Note_B5/WaveOut3.
+DSP Report: operator Note_B5/WaveOut3 is absorbed into DSP Note_B5/WaveOut3.
+DSP Report: Generating DSP Note_As5/WaveOut3, operation Mode is: A*B.
+DSP Report: operator Note_As5/WaveOut3 is absorbed into DSP Note_As5/WaveOut3.
+DSP Report: operator Note_As5/WaveOut3 is absorbed into DSP Note_As5/WaveOut3.
+DSP Report: Generating DSP Note_As5/WaveOut3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Note_As5/WaveOut3 is absorbed into DSP Note_As5/WaveOut3.
+DSP Report: operator Note_As5/WaveOut3 is absorbed into DSP Note_As5/WaveOut3.
+DSP Report: Generating DSP Note_C5/WaveOut3, operation Mode is: A*B.
+DSP Report: operator Note_C5/WaveOut3 is absorbed into DSP Note_C5/WaveOut3.
+DSP Report: operator Note_C5/WaveOut3 is absorbed into DSP Note_C5/WaveOut3.
+DSP Report: Generating DSP Note_C5/WaveOut3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Note_C5/WaveOut3 is absorbed into DSP Note_C5/WaveOut3.
+DSP Report: operator Note_C5/WaveOut3 is absorbed into DSP Note_C5/WaveOut3.
+DSP Report: Generating DSP Note_B4/WaveOut3, operation Mode is: A*B.
+DSP Report: operator Note_B4/WaveOut3 is absorbed into DSP Note_B4/WaveOut3.
+DSP Report: operator Note_B4/WaveOut3 is absorbed into DSP Note_B4/WaveOut3.
+DSP Report: Generating DSP Note_B4/WaveOut3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Note_B4/WaveOut3 is absorbed into DSP Note_B4/WaveOut3.
+DSP Report: operator Note_B4/WaveOut3 is absorbed into DSP Note_B4/WaveOut3.
+DSP Report: Generating DSP Note_As4/WaveOut3, operation Mode is: A*B.
+DSP Report: operator Note_As4/WaveOut3 is absorbed into DSP Note_As4/WaveOut3.
+DSP Report: operator Note_As4/WaveOut3 is absorbed into DSP Note_As4/WaveOut3.
+DSP Report: Generating DSP Note_As4/WaveOut3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Note_As4/WaveOut3 is absorbed into DSP Note_As4/WaveOut3.
+DSP Report: operator Note_As4/WaveOut3 is absorbed into DSP Note_As4/WaveOut3.
+DSP Report: Generating DSP Note_A4/WaveOut3, operation Mode is: A*B.
+DSP Report: operator Note_A4/WaveOut3 is absorbed into DSP Note_A4/WaveOut3.
+DSP Report: operator Note_A4/WaveOut3 is absorbed into DSP Note_A4/WaveOut3.
+DSP Report: Generating DSP Note_A4/WaveOut3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Note_A4/WaveOut3 is absorbed into DSP Note_A4/WaveOut3.
+DSP Report: operator Note_A4/WaveOut3 is absorbed into DSP Note_A4/WaveOut3.
+INFO: [Synth 8-5546] ROM "R2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'i_0/m2/R3_reg[0]' (FD) to 'i_0/m2/R3_reg[2]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1026.766 ; gain = 504.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++---------------+------------+---------------+----------------+
+|Module Name    | RTL Object | Depth x Width | Implemented As | 
++---------------+------------+---------------+----------------+
+|Wave_Generator | p_0_out    | 64x7          | LUT            | 
+|TopMusicBox    | p_0_out    | 64x7          | LUT            | 
+|TopMusicBox    | p_0_out    | 64x7          | LUT            | 
+|TopMusicBox    | p_0_out    | 64x7          | LUT            | 
+|TopMusicBox    | p_0_out    | 64x7          | LUT            | 
+|TopMusicBox    | p_0_out    | 64x7          | LUT            | 
+|TopMusicBox    | p_0_out    | 64x7          | LUT            | 
+|TopMusicBox    | p_0_out    | 64x7          | LUT            | 
+|TopMusicBox    | p_0_out    | 64x7          | LUT            | 
+|TopMusicBox    | p_0_out    | 64x7          | LUT            | 
+|TopMusicBox    | p_0_out    | 64x7          | LUT            | 
+|TopMusicBox    | p_0_out    | 64x7          | LUT            | 
+|TopMusicBox    | p_0_out    | 64x7          | LUT            | 
+|TopMusicBox    | p_0_out    | 64x7          | LUT            | 
+|TopMusicBox    | p_0_out    | 64x7          | LUT            | 
+|TopMusicBox    | p_0_out    | 64x7          | LUT            | 
+|TopMusicBox    | p_0_out    | 64x7          | LUT            | 
+|TopMusicBox    | p_0_out    | 64x7          | LUT            | 
+|TopMusicBox    | p_0_out    | 64x7          | LUT            | 
+|TopMusicBox    | p_0_out    | 64x7          | LUT            | 
+|TopMusicBox    | p_0_out    | 64x7          | LUT            | 
+|TopMusicBox    | p_0_out    | 64x7          | LUT            | 
+|TopMusicBox    | p_0_out    | 64x7          | LUT            | 
+|TopMusicBox    | p_0_out    | 64x7          | LUT            | 
+|TopMusicBox    | p_0_out    | 64x7          | LUT            | 
+|TopMusicBox    | p_0_out    | 64x7          | LUT            | 
++---------------+------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping  Report (see note below)
++---------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name    | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Wave_Generator | A*B            | 18     | 7      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | (PCIN>>17)+A*B | 15     | 7      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | A*B            | 18     | 7      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | (PCIN>>17)+A*B | 15     | 7      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | A*B            | 18     | 7      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | (PCIN>>17)+A*B | 15     | 7      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | A*B            | 18     | 7      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | (PCIN>>17)+A*B | 15     | 7      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | A*B            | 18     | 7      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | (PCIN>>17)+A*B | 15     | 7      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | A*B            | 18     | 7      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | (PCIN>>17)+A*B | 15     | 7      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | A*B            | 18     | 7      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | (PCIN>>17)+A*B | 15     | 7      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | A*B            | 18     | 7      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | (PCIN>>17)+A*B | 15     | 7      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | A*B            | 18     | 7      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | (PCIN>>17)+A*B | 15     | 7      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | A*B            | 18     | 7      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | (PCIN>>17)+A*B | 15     | 7      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | A*B            | 18     | 7      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | (PCIN>>17)+A*B | 15     | 7      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | A*B            | 18     | 7      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | (PCIN>>17)+A*B | 15     | 7      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | A*B            | 18     | 7      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | (PCIN>>17)+A*B | 15     | 7      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | A*B            | 18     | 7      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | (PCIN>>17)+A*B | 15     | 7      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | A*B            | 18     | 7      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | (PCIN>>17)+A*B | 15     | 7      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | A*B            | 18     | 7      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | (PCIN>>17)+A*B | 15     | 7      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | A*B            | 18     | 7      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | (PCIN>>17)+A*B | 15     | 7      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | A*B            | 18     | 7      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | (PCIN>>17)+A*B | 15     | 7      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | A*B            | 18     | 7      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | (PCIN>>17)+A*B | 15     | 7      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | A*B            | 18     | 7      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | (PCIN>>17)+A*B | 15     | 7      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | A*B            | 18     | 7      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | (PCIN>>17)+A*B | 15     | 7      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | A*B            | 18     | 7      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | (PCIN>>17)+A*B | 15     | 7      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | A*B            | 18     | 7      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | (PCIN>>17)+A*B | 15     | 7      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | A*B            | 18     | 7      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | (PCIN>>17)+A*B | 15     | 7      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | A*B            | 18     | 7      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Wave_Generator | (PCIN>>17)+A*B | 15     | 7      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++---------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |Synth__GB0       |           1|     24103|
+|2     |Synth__GB1       |           1|      7270|
+|3     |Synth__GB2       |           1|      8725|
+|4     |Mode1__GC0       |           1|       223|
+|5     |TopMusicBox__GC0 |           1|      3357|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 1026.766 ; gain = 504.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:17 ; elapsed = 00:01:20 . Memory (MB): peak = 1143.355 ; gain = 621.125
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |Synth__GB0       |           1|     24103|
+|2     |Synth__GB1       |           1|      7270|
+|3     |Synth__GB2       |           1|      8725|
+|4     |Mode1__GC0       |           1|       223|
+|5     |TopMusicBox__GC0 |           1|      3357|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:37 ; elapsed = 00:01:39 . Memory (MB): peak = 1365.340 ; gain = 843.109
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 1365.340 ; gain = 843.109
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 1365.340 ; gain = 843.109
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:45 ; elapsed = 00:01:48 . Memory (MB): peak = 1365.340 ; gain = 843.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:45 ; elapsed = 00:01:48 . Memory (MB): peak = 1365.340 ; gain = 843.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:46 ; elapsed = 00:01:48 . Memory (MB): peak = 1365.340 ; gain = 843.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:46 ; elapsed = 00:01:48 . Memory (MB): peak = 1365.340 ; gain = 843.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     6|
+|2     |CARRY4    |  2493|
+|3     |DSP48E1_1 |    48|
+|4     |LUT1      |   998|
+|5     |LUT2      |  1557|
+|6     |LUT3      |  2394|
+|7     |LUT4      |  1579|
+|8     |LUT5      |  2940|
+|9     |LUT6      |  6919|
+|10    |MUXF7     |     3|
+|11    |FDCE      |    40|
+|12    |FDRE      |   909|
+|13    |LDC       |   161|
+|14    |LDCP      |     8|
+|15    |IBUF      |    19|
+|16    |OBUF      |    12|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------------+------------------+------+
+|      |Instance       |Module            |Cells |
++------+---------------+------------------+------+
+|1     |top            |                  | 20086|
+|2     |  m1           |Mode1             | 17953|
+|3     |    Display1   |segmentDisplay_0  |    48|
+|4     |      C1       |Clock_24          |    48|
+|5     |    Synth1     |Synth             | 17905|
+|6     |      Note_A4  |Wave_Generator    |   743|
+|7     |      Note_A5  |Wave_Generator_1  |   730|
+|8     |      Note_As4 |Wave_Generator_2  |   709|
+|9     |      Note_As5 |Wave_Generator_3  |   752|
+|10    |      Note_B4  |Wave_Generator_4  |   720|
+|11    |      Note_B5  |Wave_Generator_5  |   724|
+|12    |      Note_C4  |Wave_Generator_6  |   693|
+|13    |      Note_C5  |Wave_Generator_7  |   724|
+|14    |      Note_Cs4 |Wave_Generator_8  |   690|
+|15    |      Note_Cs5 |Wave_Generator_9  |   727|
+|16    |      Note_D4  |Wave_Generator_10 |   706|
+|17    |      Note_D5  |Wave_Generator_11 |   734|
+|18    |      Note_Ds4 |Wave_Generator_12 |   698|
+|19    |      Note_Ds5 |Wave_Generator_13 |   732|
+|20    |      Note_E4  |Wave_Generator_14 |   723|
+|21    |      Note_E5  |Wave_Generator_15 |   734|
+|22    |      Note_F4  |Wave_Generator_16 |   705|
+|23    |      Note_F5  |Wave_Generator_17 |   743|
+|24    |      Note_Fs4 |Wave_Generator_18 |   718|
+|25    |      Note_Fs5 |Wave_Generator_19 |   734|
+|26    |      Note_G4  |Wave_Generator_20 |   710|
+|27    |      Note_G5  |Wave_Generator_21 |   741|
+|28    |      Note_Gs4 |Wave_Generator_22 |   715|
+|29    |      Note_Gs5 |Wave_Generator_23 |   736|
+|30    |  m2           |Mode2             |  2077|
+|31    |    ADSR       |Timer             |   531|
+|32    |    Display2   |segmentDisplay    |    48|
+|33    |      C1       |Clock             |    48|
++------+---------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:46 ; elapsed = 00:01:48 . Memory (MB): peak = 1365.340 ; gain = 843.109
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:37 ; elapsed = 00:01:45 . Memory (MB): peak = 1365.340 ; gain = 708.332
+Synthesis Optimization Complete : Time (s): cpu = 00:01:46 ; elapsed = 00:01:48 . Memory (MB): peak = 1365.340 ; gain = 843.109
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2713 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1365.340 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 169 instances were transformed.
+  LDC => LDCE: 161 instances
+  LDCP => LDCP (GND, LUT3, LUT3, LDCE, VCC): 8 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+69 Infos, 59 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:55 ; elapsed = 00:01:58 . Memory (MB): peak = 1365.340 ; gain = 1064.219
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1365.340 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/User/Desktop/Synthesizer Project/SynthesizerProject/SynthesizerProject.runs/synth_1/TopMusicBox.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TopMusicBox_utilization_synth.rpt -pb TopMusicBox_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 24 23:43:43 2019...

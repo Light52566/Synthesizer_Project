@@ -1,0 +1,146 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Tue Dec 24 23:47:00 2019
+| Host         : DESKTOP-OTFGAJI running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TopMusicBox_control_sets_placed.rpt
+| Design       : TopMusicBox
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    68 |
+|    Minimum number of control sets                        |    68 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    82 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    68 |
+| >= 0 to < 4        |     8 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    58 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              36 |           17 |
+| No           | No                    | Yes                    |              40 |           10 |
+| No           | Yes                   | No                     |             545 |          149 |
+| Yes          | No                    | No                     |              81 |           30 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             416 |          229 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------+-------------------------------------+-------------------------------------------+------------------+----------------+
+|      Clock Signal     |            Enable Signal            |              Set/Reset Signal             | Slice Load Count | Bel Load Count |
++-----------------------+-------------------------------------+-------------------------------------------+------------------+----------------+
+|  m2/Decay_reg[2]/G0   |                                     |                                           |                1 |              1 |
+|  m2/Attack_reg[0]/G0  |                                     |                                           |                1 |              1 |
+|  m2/Attack_reg[2]/G0  |                                     |                                           |                1 |              1 |
+|  m2/Decay_reg[0]/G0   |                                     |                                           |                1 |              1 |
+|  m2/Sustain_reg[0]/G0 |                                     |                                           |                1 |              1 |
+|  m2/Sustain_reg[2]/G0 |                                     |                                           |                1 |              1 |
+|  m2/Release_reg[0]/G0 |                                     |                                           |                1 |              1 |
+|  m2/Release_reg[2]/G0 |                                     |                                           |                1 |              1 |
+|  Clock_IBUF_BUFG      | Octave_IBUF                         |                                           |                8 |             12 |
+|  Clock_IBUF_BUFG      | m1/Synth1/p_0_in                    |                                           |                7 |             12 |
+|  Clock_IBUF_BUFG      |                                     | m1/Synth1/Note_E5/counter[0]_i_1__11_n_5  |                4 |             16 |
+|  Clock_IBUF_BUFG      |                                     | m1/Synth1/Note_A4/counter[0]_i_1__22_n_5  |                4 |             16 |
+|  Clock_IBUF_BUFG      |                                     | m1/Synth1/Note_A5/counter[0]_i_1__13_n_5  |                4 |             16 |
+|  Clock_IBUF_BUFG      |                                     | m1/Synth1/Note_D4/counter[0]_i_1__1_n_5   |                4 |             16 |
+|  Clock_IBUF_BUFG      |                                     | m1/Synth1/Note_D5/counter[0]_i_1__9_n_5   |                4 |             16 |
+|  Clock_IBUF_BUFG      |                                     | m1/Synth1/Note_Ds4/counter[0]_i_1__2_n_5  |                4 |             16 |
+|  Clock_IBUF_BUFG      |                                     | m1/Synth1/Note_Ds5/counter[0]_i_1__10_n_5 |                4 |             16 |
+|  Clock_IBUF_BUFG      |                                     | m1/Synth1/Note_E4/counter[0]_i_1__3_n_5   |                4 |             16 |
+|  Clock_IBUF_BUFG      |                                     | m1/Synth1/Note_F4/counter[0]_i_1__4_n_5   |                4 |             16 |
+|  Clock_IBUF_BUFG      |                                     | m1/Synth1/Note_F5/counter[0]_i_1__12_n_5  |                4 |             16 |
+|  Clock_IBUF_BUFG      |                                     | m1/Synth1/Note_Fs4/counter[0]_i_1__5_n_5  |                4 |             16 |
+|  Clock_IBUF_BUFG      |                                     | m1/Synth1/Note_Fs5/counter[0]_i_1__16_n_5 |                4 |             16 |
+|  Clock_IBUF_BUFG      |                                     | m1/Synth1/Note_As4/counter[0]_i_1__21_n_5 |                4 |             16 |
+|  Clock_IBUF_BUFG      |                                     | m1/Synth1/Note_G4/counter[0]_i_1__6_n_5   |                4 |             16 |
+|  Clock_IBUF_BUFG      |                                     | m1/Synth1/Note_G5/counter[0]_i_1__15_n_5  |                4 |             16 |
+|  Clock_IBUF_BUFG      |                                     | m1/Synth1/Note_Gs4/counter[0]_i_1__7_n_5  |                4 |             16 |
+|  Clock_IBUF_BUFG      |                                     | m1/Synth1/Note_Gs5/counter[0]_i_1__14_n_5 |                4 |             16 |
+|  Clock_IBUF_BUFG      |                                     | m1/Synth1/Note_As5/counter[0]_i_1__18_n_5 |                4 |             16 |
+|  Clock_IBUF_BUFG      |                                     | m1/Synth1/Note_B4/counter[0]_i_1__20_n_5  |                4 |             16 |
+|  Clock_IBUF_BUFG      |                                     | m1/Synth1/Note_B5/clear                   |                4 |             16 |
+|  Clock_IBUF_BUFG      |                                     | m1/Synth1/Note_C4/counter[0]_i_1_n_5      |                4 |             16 |
+|  Clock_IBUF_BUFG      |                                     | m1/Synth1/Note_C5/counter[0]_i_1__19_n_5  |                4 |             16 |
+|  Clock_IBUF_BUFG      |                                     | m1/Synth1/Note_Cs4/counter[0]_i_1__0_n_5  |                4 |             16 |
+|  Clock_IBUF_BUFG      |                                     | m1/Synth1/Note_Cs5/counter[0]_i_1__8_n_5  |                4 |             16 |
+|  Clock_IBUF_BUFG      | m1/Synth1/Note_E5/i[5]_i_2__11_n_5  | m1/Synth1/Note_E5/i[5]_i_1__11_n_5        |                9 |             16 |
+|  Clock_IBUF_BUFG      | m1/Synth1/Note_A4/i[5]_i_2__22_n_5  | m1/Synth1/Note_A4/i[5]_i_1__22_n_5        |                8 |             16 |
+|  Clock_IBUF_BUFG      | m1/Synth1/Note_A5/i[5]_i_2__13_n_5  | m1/Synth1/Note_A5/i[5]_i_1__13_n_5        |                9 |             16 |
+|  Clock_IBUF_BUFG      | m1/Synth1/Note_D4/i[5]_i_2__1_n_5   | m1/Synth1/Note_D4/i[5]_i_1__1_n_5         |                8 |             16 |
+|  Clock_IBUF_BUFG      | m1/Synth1/Note_D5/i[5]_i_2__9_n_5   | m1/Synth1/Note_D5/i[5]_i_1__9_n_5         |                9 |             16 |
+|  Clock_IBUF_BUFG      | m1/Synth1/Note_Ds4/i[5]_i_2__2_n_5  | m1/Synth1/Note_Ds4/i[5]_i_1__2_n_5        |               11 |             16 |
+|  Clock_IBUF_BUFG      | m1/Synth1/Note_Ds5/i[5]_i_2__10_n_5 | m1/Synth1/Note_Ds5/i[5]_i_1__10_n_5       |                8 |             16 |
+|  Clock_IBUF_BUFG      | m1/Synth1/Note_E4/i[5]_i_2__3_n_5   | m1/Synth1/Note_E4/i[5]_i_1__3_n_5         |               10 |             16 |
+|  Clock_IBUF_BUFG      | m1/Synth1/Note_F4/i[5]_i_2__4_n_5   | m1/Synth1/Note_F4/i[5]_i_1__4_n_5         |                9 |             16 |
+|  Clock_IBUF_BUFG      | m1/Synth1/Note_F5/i[5]_i_2__12_n_5  | m1/Synth1/Note_F5/i[5]_i_1__12_n_5        |                7 |             16 |
+|  Clock_IBUF_BUFG      | m1/Synth1/Note_Fs4/i[5]_i_2__5_n_5  | m1/Synth1/Note_Fs4/i[5]_i_1__5_n_5        |                9 |             16 |
+|  Clock_IBUF_BUFG      | m1/Synth1/Note_Fs5/i[5]_i_2__16_n_5 | m1/Synth1/Note_Fs5/i[5]_i_1__16_n_5       |               11 |             16 |
+|  Clock_IBUF_BUFG      | m1/Synth1/Note_As4/i[5]_i_2__21_n_5 | m1/Synth1/Note_As4/i[5]_i_1__21_n_5       |               10 |             16 |
+|  Clock_IBUF_BUFG      | m1/Synth1/Note_G4/i[5]_i_2__6_n_5   | m1/Synth1/Note_G4/i[5]_i_1__6_n_5         |               11 |             16 |
+|  Clock_IBUF_BUFG      | m1/Synth1/Note_G5/i[5]_i_2__15_n_5  | m1/Synth1/Note_G5/i[5]_i_1__15_n_5        |                9 |             16 |
+|  Clock_IBUF_BUFG      | m1/Synth1/Note_Gs4/i[5]_i_2__7_n_5  | m1/Synth1/Note_Gs4/i[5]_i_1__7_n_5        |               10 |             16 |
+|  Clock_IBUF_BUFG      | m1/Synth1/Note_Gs5/i[5]_i_2__14_n_5 | m1/Synth1/Note_Gs5/i[5]_i_1__14_n_5       |                8 |             16 |
+|  Clock_IBUF_BUFG      | m1/Synth1/Note_As5/i[5]_i_2__18_n_5 | m1/Synth1/Note_As5/i[5]_i_1__18_n_5       |                8 |             16 |
+|  Clock_IBUF_BUFG      | m1/Synth1/Note_B4/i[5]_i_2__20_n_5  | m1/Synth1/Note_B4/i[5]_i_1__20_n_5        |               10 |             16 |
+|  Clock_IBUF_BUFG      | m1/Synth1/Note_B5/p_1_in__0         | m1/Synth1/Note_B5/p_0_in__0               |               10 |             16 |
+|  Clock_IBUF_BUFG      | m1/Synth1/Note_C4/p_1_in            | m1/Synth1/Note_C4/i[5]_i_1_n_5            |               10 |             16 |
+|  Clock_IBUF_BUFG      | m1/Synth1/Note_C5/i[5]_i_2__19_n_5  | m1/Synth1/Note_C5/i[5]_i_1__19_n_5        |                7 |             16 |
+|  Clock_IBUF_BUFG      | m1/Synth1/Note_Cs4/i[5]_i_2__0_n_5  | m1/Synth1/Note_Cs4/i[5]_i_1__0_n_5        |               10 |             16 |
+|  Clock_IBUF_BUFG      | m1/Synth1/Note_Cs5/i[5]_i_2__8_n_5  | m1/Synth1/Note_Cs5/i[5]_i_1__8_n_5        |               10 |             16 |
+|  Clock_IBUF_BUFG      | m1/Synth1/Note_A4/bdt               |                                           |                7 |             25 |
+|  Clock_IBUF_BUFG      |                                     |                                           |                9 |             28 |
+|  n_3_10118_BUFG       |                                     | m2/Sustain_reg[31]_i_2_n_5                |                8 |             30 |
+|  n_2_10104_BUFG       |                                     | m2/Decay_reg[31]_i_2_n_5                  |                8 |             30 |
+|  n_4_10106_BUFG       |                                     | m2/Release_reg[31]_i_2_n_5                |                8 |             30 |
+|  n_1_10097_BUFG       |                                     | m2/Attack_reg[31]_i_2_n_5                 |                9 |             31 |
+|  Clock_IBUF_BUFG      | m2/ADSR/counter[0]_i_2_n_5          | m2/ADSR/counter[0]_i_1__23_n_5            |                8 |             32 |
+|  Clock_IBUF_BUFG      | m2/ADSR/E[0]                        |                                           |                8 |             32 |
+|  Clock_IBUF_BUFG      |                                     | Reset_IBUF                                |               10 |             40 |
+|  n_0_11845_BUFG       |                                     | m1/Synth1/Wave1_reg[9]_i_2_n_5            |               20 |             40 |
++-----------------------+-------------------------------------+-------------------------------------------+------------------+----------------+
+
+
